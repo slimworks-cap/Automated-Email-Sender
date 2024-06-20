@@ -161,8 +161,9 @@ nonsend = ['exclude','dead', 'sent','bounced']
 In general, you can edit the script to your liking as much as you want feel free to download the script or if you have any requests or questions feel free to leave a comment!
 
 I would not have been able to complete this project without the help of these wonderful guides: 
-* [Python Outlook Automation by Izzy Analytics][Pywin32-guide-url]
-* [Tkinter Guide by Real Python][Tkinter-guide-url]
+* [Python Outlook Automation by Izzy Analytics][Pywin32-guide-url] - Guide for Pywin32
+* [Tkinter Guide by Real Python][Tkinter-guide-url] - Guide for Tkinter
+* [Best-README-Template][markdown-url] - Guide for writing a README.MD file in Github
   
 Please do give them a read as they have helped me and they may help you~
 
@@ -173,4 +174,5 @@ Please do give them a read as they have helped me and they may help you~
 [Pandas-url]: https://pandas.pydata.org/
 [Tkinter-url]: https://docs.python.org/3/library/tkinter.html
 [Pywin32-guide-url]: https://www.youtube.com/watch?v=J3SiyMingRk&list=PLHnSLOMOPT11njaNmENJN6p2ro9MTc7t_
-[Tkinter-guide-url]:https://realpython.com/python-gui-tkinter/
+[Tkinter-guide-url]: https://realpython.com/python-gui-tkinter/
+[markdown-url]: https://github.com/othneildrew/Best-README-Template/blob/master/README.md?plain=1

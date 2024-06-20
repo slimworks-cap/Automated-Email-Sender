@@ -156,6 +156,21 @@ nonsend = ['exclude','dead', 'sent']
 nonsend = ['exclude','dead', 'sent','bounced']
 ```
 
+##I want to include attachments in the emails that I send. How do I include this? 
+
+You may also add attachments using `line 70` and `line 106`. Simply remove the hashtag `#` from both lines and then include the absolute path of the file you want to attach in to the single quotes of both lines.
+
+```py
+# message.Attachments.Add(r'C:\Users\loremipsum\Desktop\attachment.jpg') 
+```
+
+For example, you would like to include a file called "pic1.png" in your pictures folder as an attachment in your emails. You may opt to edit  `line 70` and `line 106` like below.
+
+```py
+message.Attachments.Add(r'C:\Users\loremipsum\Pictures\pic1.png') 
+```
+This should include "pic1.png" in all emails that you send to your contacts.
+
 # Acknowledgments
 
 In general, you can edit the script to your liking as much as you want feel free to download the script or if you have any requests or questions feel free to leave a comment!

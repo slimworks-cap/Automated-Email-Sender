@@ -1,3 +1,25 @@
+# Automated Outlook Email Sender
+
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#initial-setup">Intial Setup</a></li>
+    <li><a href="#usage">Usage</a></li>
+    <li>
+      <a href="#customization">Customization</a>
+       <ul>
+         <li><a href="#i-want-to-include-attachments-in-the-emails-that-i-send-how-do-i-include-this">I have more than just 4 columns in my sheet?</a></li>
+         <li><a href="#i-want-to-further-personalize-the-subject-to-have-the-company-i-am-sending-to-be-included-in-the-subject-but-i-dont-want-to-send-each-email-manually-how-do-i-do-that-without-sending-each-manually">I want to further personalize the subject</a></li>
+         <li><a href="#i-want-to-add-more-exclusion-words-in-the-excel-sheets-status-column-to-be-more-specific-to-my-task-how-do-i-do-that">I want to add more exclusion words</a></li>
+         <li><a href="#i-want-to-include-attachments-in-the-emails-that-i-send-how-do-i-include-this">I want to include attachments in the emails</a></li>
+       </ul>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
+
 <!-- ABOUT THE PROJECT -->
 # About The Project
 
@@ -12,6 +34,7 @@ We would need to send each client/business partner a uniform email notification 
 It was originally written to only be run through the command prompt but I rewrote it to be more user friendly for my coworkers who did not know how to program.
 
 Eventually I realized it could be very useful tool for those who work in jobs that regularly send uniform emails to different email contacts and that is why I published this to github w/ instructions on how to use it. 
+
 
 # Built With
 * [Python][Python-url]
@@ -128,7 +151,7 @@ df = sheet.iloc[0: , 0:4]
 df = sheet.iloc[0: , 0:8] 
 ```
 
-##I want to further personalize the subject to have the company I am sending to be included in the subject but I don't want to send each email manually. How do I do that without sending each manually? 
+## I want to further personalize the subject to have the company I am sending to be included in the subject but I don't want to send each email manually. How do I do that without sending each manually? 
 
    For the subject you may also opt to use `string interpolation` through f-strings in `line 66` and `line 102` like the example below that should make the subject as follows:
      

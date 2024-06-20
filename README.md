@@ -115,7 +115,7 @@ Even if you aren't completely familiar with python or programming in general you
 
 I will list some examples of further customization you can do to make the application more attuned to your needs.
 
-##I have more than just 4 columns in my sheet. How do I take into account the other columns in my spread sheet?
+## I have more than just 4 columns in my sheet. How do I take into account the other columns in my spread sheet?
 
   You may opt to edit `line 25` to reflect the amount of columns you want reflected when running the application.
 ```py
@@ -142,7 +142,7 @@ message.Subject = f"Email Marketing // Promos and Services // {row['Name']}"
 
 You may further customize lines `line 66` and `line 102` to your needs. 
 
-##I want to add more exclusion words in the excel sheets STATUS column to be more specific to my task. How do I do that.
+## I want to add more exclusion words in the excel sheets STATUS column to be more specific to my task. How do I do that.
 
   You can edit the "nonsend" list in `line 22` to have more exclusion words you can mark in the excel sheet. 
 
@@ -156,7 +156,7 @@ nonsend = ['exclude','dead', 'sent']
 nonsend = ['exclude','dead', 'sent','bounced']
 ```
 
-##I want to include attachments in the emails that I send. How do I include this? 
+## I want to include attachments in the emails that I send. How do I include this? 
 
 You may also add attachments using `line 70` and `line 106`. Simply remove the hashtag `#` from both lines and then include the absolute path of the file you want to attach in to the single quotes of both lines.
 

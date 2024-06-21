@@ -36,6 +36,7 @@ It was originally written to only be run through the command prompt but I rewrot
 Eventually I realized it could be very useful tool for those who work in jobs that regularly send uniform emails to different email contacts and that is why I published this to github w/ instructions on how to use it. 
 
 
+
 # Built With
 * [Python][Python-url]
 * [Pandas][Pandas-url]
@@ -44,9 +45,11 @@ Eventually I realized it could be very useful tool for those who work in jobs th
 
 # Initial Setup
 
-In order to use this application you would need to have the below software and modules installed: 
+You will need to download the script `Outlook Email Sender.py` from this repository and place it in a folder in your computers storage. This is the launcher of the application. 
+
+You would also need to have the below software and modules installed in order to use this application: 
 * Python 3
-* Any IDE (You may download Atom, Visual Studio Code, or even Notepad!)
+* an Integrated Development Environment or "IDE" ( an IDE is an application that you can use to edit script files: You may use Atom, Visual Studio Code, or even Notepad as an IDE)
 * Microsoft Outlook (Ideally, Outlook 2016)
 * Microsoft Excel
 * the above mentioned python modules in the "Built With" Section

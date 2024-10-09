@@ -11,19 +11,24 @@ from tkinter import messagebox
 
 # ---------------------- Hardcoded stuff --------------------- #
 
+# edit the below line to reflect the location of your file in your computer and sheet name that contains the email contacts 
+file_path = r"C:\Users\loremipsum\Desktop\Sample Contact File.xlsx"  
+
+# setting the sheet that we are gonna access in the excel file
+file_path_sheet = 'Sheet1'
+
 # start an instance of outlook
 outlook = client.Dispatch("Outlook.Application")
 
 # below line reads the file that contains the email contacts we need to send the email to
-# edit the below line to reflect the location of your file in your computer and sheet name that contains the email contacts 
-sheet = pd.read_excel(r"C:\Users\loremipsum\Desktop\Sample Contact File.xlsx", sheet_name = 'Sheet1')
+# 
+sheet = pd.read_excel(file_path, sheet_name = file_path_sheet)
 
 # list of values that can be put in the excel sheet status column so the script will exclude them from being sent emails 
 nonsend = ['exclude','dead', 'sent']
 
-# set the dataframe
+# set the dataframe 
 df = sheet.iloc[0: , 0:4]
-
 # -------------------------- functions ------------------------- #
 
 # I've found that when updating and SAVING the xlsx file (for example: editing a row where the email address was incorrect or deleting a row)
@@ -38,7 +43,7 @@ def refresh():
     # To refresh the file being accessed 
     global df
     # local_sheet has to have read_excel method reading the same file as global sheet variable on line 16
-    local_sheet = pd.read_excel(r"C:\Users\loremipsum\Desktop\Sample Contact File.xlsx", sheet_name = 'Sheet1')
+    local_sheet = pd.read_excel(file_path, sheet_name = file_path_sheet)
 
     function_df = local_sheet.iloc[0: , 0:4]
     df = function_df
